@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio Button</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="mof" id="im">
+                <label for="im">Masculino</label>
+            </p>
+
+            <p>
+                <input type="radio" name="mof" id="if">
+                <label for="if">Feminino</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="opa" id="iopa" checked>
+                <label for="iopa">Opção A</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="opb" id="iopb">
+                <label for="iopb">Opção B</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="opc" id="iopc">
+                <label for="iopc">Opção C</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="opd" id="iopd">
+                <label for="iopd">Opção D</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

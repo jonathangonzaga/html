@@ -40,6 +40,6 @@ img {
 }
 
 img#phone { display: block; }
-img#tablet,#impressao,#desktop,#tv {
+img#tablet,#impressao,#pc,#tv {
     display: none;
 }

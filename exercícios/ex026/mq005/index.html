@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="estilos/style.css" media="all">
 
-    <link rel="stylesheet" href="estilos/tela-grande.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -45,6 +45,16 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+
+            else {
+                itens.style.display = 'none'
             }
         }
     </script>
